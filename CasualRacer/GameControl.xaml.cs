@@ -1,5 +1,4 @@
-﻿using CasualRacer.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CasualRacer.Pages
+namespace CasualRacer
 {
     /// <summary>
-    /// Interaktionslogik für GamePage.xaml
+    /// Interaktionslogik für GameControl.xaml
     /// </summary>
-    public partial class GamePage : Page
+    public partial class GameControl : UserControl
     {
-        private Game game = new Game();
-
-        public GamePage()
+        public GameControl()
         {
             InitializeComponent();
-            DataContext = game;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
         }
     }
 }

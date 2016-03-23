@@ -8,11 +8,11 @@ namespace CasualRacer.Model
 {
     internal class Game
     {
-        public List<Player> Players { get; set; }
+        public Player Player1 { get; set; }
 
         public Game()
         {
-            Players = new List<Player>();
+            Player1 = new Player();
         }
     }
 }
